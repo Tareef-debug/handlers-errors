@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="serchresult"></p>
+    <p id="replaceresult"></p>
+    <p id="stringresult"></p>
+    <p id="errormessage"></p>
+    <p id="donkey"></p>
+    <button onclick="error()">error function</button>
+    <script>
+        var hed = "Hello! How are you?"
+        document.getElementById("serchresult").innerHTML = hed.search("are")
+        document.getElementById("replaceresult").innerHTML = hed.replace("are","smart are")
+        var x = 69
+        var y = 101
+        document.getElementById("stringresult").innerHTML = String(x) + String(y)
+        try{
+            eatinganapplealert("DONT EAT AN APPLE")
+        }
+        catch(error){
+            alert(error.message)
+        }
+        error = () => alert("i dont know what to say")
+    </script>
+
+    
+</body>
+</html>
